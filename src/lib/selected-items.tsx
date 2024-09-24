@@ -1,5 +1,7 @@
-import Masjid from "@/app/[portfolio]/(component)/project-item/masjid";
+"use client";
+
 import Avana from "@/app/[portfolio]/(component)/work-item/avana";
+
 import itemType from "@/constant/item-type";
 import projectType from "@/constant/selected-projects";
 import workType from "@/constant/selected-works";
@@ -48,31 +50,31 @@ const generateSelectedPortfolioType = ({
   const availableProjects = {
     [projectType.masjidRamahKemenag.slug]: {
       name: projectType.masjidRamahKemenag.text,
-      component: <Masjid />,
+      component: <Avana />,
     },
     [projectType.plnIconPlus.slug]: {
       name: projectType.plnIconPlus.text,
-      component: <Masjid />,
+      component: <Avana />,
     },
     [projectType.bniBlueBirdTraveloka.slug]: {
       name: projectType.bniBlueBirdTraveloka.text,
-      component: <Masjid />,
+      component: <Avana />,
     },
     [projectType.ppbs.slug]: {
       name: projectType.ppbs.text,
-      component: <Masjid />,
+      component: <Avana />,
     },
     [projectType.lereroLMS.slug]: {
       name: projectType.lereroLMS.text,
-      component: <Masjid />,
+      component: <Avana />,
     },
     [projectType.simonevKemenko.slug]: {
       name: projectType.simonevKemenko.text,
-      component: <Masjid />,
+      component: <Avana />,
     },
     [projectType.avana.slug]: {
       name: projectType.avana.text,
-      component: <Masjid />,
+      component: <Avana />,
     },
   };
 

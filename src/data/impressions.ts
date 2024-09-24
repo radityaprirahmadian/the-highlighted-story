@@ -1,0 +1,68 @@
+const impressionData = [
+  {
+    order: 2,
+    name: "Malik Zulfikar Gantina",
+    position: "Quality Assurance Engineer",
+    office: "Krom Bank",
+    id: "malik",
+    linkedIn: "https://www.linkedin.com/in/malikzulfikar/",
+  },
+  {
+    order: 6,
+    name: "Zaenal Muttaqien",
+    position: "Project Manager",
+    office: "PLABS.ID",
+    id: "zaenal",
+    linkedIn: "https://www.linkedin.com/in/zaenal-muttaqien/",
+  },
+  {
+    order: 11,
+    name: "Ardiansyah Purwanto",
+    position: "Senior Frontend Developer",
+    office: "Sinarmas",
+    id: "ardiansyah",
+    linkedIn: "https://www.linkedin.com/in/malikzulfikar/",
+  },
+  {
+    order: 9,
+    name: "Ayi Muhammad Iqbal Nasuha",
+    position: "Senior Software Engineer",
+    office: "FAR Capital",
+    id: "ayi",
+    linkedIn: "https://www.linkedin.com/in/malikzulfikar/",
+  },
+  {
+    order: 1,
+    name: "Bariq Mbani",
+    position: "API Developer",
+    office: "Hitachi Channel Solution",
+    id: "bariq",
+    linkedIn: "https://www.linkedin.com/in/malikzulfikar/",
+  },
+  {
+    order: 7,
+    name: "David Ferdinand Imanuel Manurung",
+    position: "Software Engineer",
+    office: "Autobahn Security",
+    id: "david",
+    linkedIn: "https://www.linkedin.com/in/davidfim/",
+  },
+  {
+    order: 8,
+    name: "Rais Sabilullah",
+    position: "Software Engineer",
+    office: "Biteship",
+    linkedIn: "https://www.linkedin.com/in/muhammad-rais-sabilullah/",
+    id: "rais",
+  },
+  {
+    order: 12,
+    name: "Anugerah Prima Bagaskara",
+    position: "Frontend Developer",
+    office: "PT Neural Technologies Indonesia",
+    id: "bagas",
+    linkedIn: "https://www.linkedin.com/in/bagasapk/",
+  },
+];
+
+export default impressionData;

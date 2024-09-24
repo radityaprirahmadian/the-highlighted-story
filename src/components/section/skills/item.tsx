@@ -31,13 +31,15 @@ const Item = ({ isActive, image, onClick }: { isActive: boolean; image: string; 
         },
       }}
     >
-      <div
+      <motion.div
+        initial={{ x: -7, y: -7 }}
+        whileHover={{ x: 0, y: 0, transition: { ease: "circInOut", duration: 0.2, delay: 0.01 } }}
         onClick={() => onClick()}
-        className="aspect-square rounded-md relative z-10 flex items-center justify-center bg-earth-yellow-100 border-black border-2 text-center text-black cursor-pointer"
+        className="aspect-square relative z-10 flex items-center justify-center bg-earth-yellow-100 border-black border-2 text-center text-black cursor-pointer"
       >
-        <Image alt="tes" src={image} width="70" height="70" className="p"></Image>
-      </div>
-      <div className="absolute w-full h-full rounded-md bg-falu-red-10 border-black border-2 z-0 left-1 top-1"></div>
+        <Image alt="tes" src={image} width="60" height="60" className="p"></Image>
+      </motion.div>
+      <div className="absolute w-full h-full bg-falu-red-10 border-black border-2 z-0 left-0 top-0"></div>
     </motion.div>
   );
 };

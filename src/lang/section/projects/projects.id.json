@@ -1,0 +1,11 @@
+{
+  "title": "&ldquo;Talk is cheap. Show me the <span class=\"py-1 px-2 bg-carribean-10 text-white\">code</span>.&rdquo;<span class=\"text-sm lg:text-xl\">— Linus Torvalds</span>",
+  "pln": "Refaktorisasi halaman landing PLN Icon Plus, dengan desain baru yang diimplementasikan.",
+  "masjid": "Sebuah platform untuk kompetisi antar masjid yang dibina oleh Kemenag.",
+  "bni": "Integrasi antara BNI Mobile dengan API Bluebird & Traveloka.",
+  "ppbs": "Sebuah platform untuk pemesanan ruangan di PPBS, salah satu gedung di Universitas Padjadjaran.",
+  "lerero": "Sebuah platform Learning Management System yang dikembangkan oleh Lerero.",
+  "kemenko": "Sistem untuk Monitoring dan Evaluasi Kemenko PMK.",
+  "avana": "Dashboard untuk mengelola toko online, seperti pengiriman, stok, dan lain-lain. Dibuat oleh Avana.",
+  "detail": "Lihat detail"
+}

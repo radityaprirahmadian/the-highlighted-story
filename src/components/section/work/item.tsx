@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { cubicBezier, motion, useAnimation, useMotionValueEvent, useScroll } from "framer-motion";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import useActiveLanguage from "@/hooks/use-active-language";
 
 const Item = ({
   name,
@@ -25,6 +26,7 @@ const Item = ({
   isActive: boolean;
   onClick: () => void;
 }) => {
+  const { work: lang } = useActiveLanguage();
   const controls = useAnimation();
   const router = useRouter();
 
@@ -46,46 +48,49 @@ const Item = ({
       variants={{
         active: {
           flexGrow: 1,
-          filter: `brightness(1)`,
+          height: "30rem",
+          // filter: `brightness(1)`,
           transition: { ease: "circOut", duration: 0.2 },
         },
         ["active-vertical"]: {
-          height: 450,
-          filter: `brightness(1)`,
+          height: 500,
+          // filter: `brightness(1)`,
           transition: { ease: "circOut", duration: 0.2 },
         },
         ["inactive-vertical"]: {
           height: 128,
-          filter: `brightness(70%)`,
+          // filter: `brightness(70%)`,
           transition: { ease: "circOut", duration: 0.2 },
         },
         ["active-small-vertical"]: {
           height: 600,
-          filter: `brightness(1)`,
+          // filter: `brightness(1)`,
           transition: { ease: "circOut", duration: 0.2 },
         },
         ["inactive-small-vertical"]: {
           height: 128,
-          filter: `brightness(70%)`,
+          // filter: `brightness(70%)`,
           transition: { ease: "circOut", duration: 0.2 },
         },
         inactive: {
           flexGrow: 0,
-          height: "24rem",
-          filter: `brightness(70%)`,
+          height: "30rem",
+          // filter: `brightness(70%)`,
           transition: { ease: "circOut", duration: 0.2 },
         },
       }}
       initial={{ flexGrow: 0 }}
       onClick={onClick}
       className={cn(
-        "relative w-full lg:w-[12%] xl:w-[10%] h-32 lg:h-96 cursor-pointer",
-        !isActive ? "hover:!brightness-90" : ""
+        "relative w-full lg:w-[12%] xl:w-[10%] h-32 md:h-14 xl:h-96 cursor-pointer"
+        // !isActive ? "hover:!brightness-90" : ""
       )}
     >
-      <div
+      <motion.div
+        initial={{ x: -7, y: -7 }}
+        whileHover={{ x: 0, y: 0, transition: { ease: "circInOut", duration: 0.2, delay: 0.01 } }}
         className={cn(
-          `w-full h-full relative z-10 overflow-hidden rounded-md border-black border-2 bg-light-orange-90 text-black lg:pt-10 flex flex-col lg:flex-row items-start gap-10`
+          `w-full h-full relative z-10 overflow-hidden border-black border-2 bg-light-orange-90 text-black lg:pt-10 flex flex-col lg:flex-row items-start gap-10`
         )}
       >
         <div
@@ -100,7 +105,7 @@ const Item = ({
             alt={name}
             width="200"
             height="200"
-            className="max-w-fit md:h-auto w-7/12 md:w-[170px] lg:h-[60%] lg:w-auto object-cover object-left pl-4"
+            className="max-w-fit w-6/12 sm:w-3/12 md:w-[170px] h-auto lg:h-[50%] lg:w-auto object-cover object-left pl-4"
           ></Image>
 
           <motion.div
@@ -138,7 +143,7 @@ const Item = ({
           </motion.div>
 
           <motion.div
-            className="text-lg md:text-2xl p-6 absolute top-0 lg:bottom-0 lg:top-auto right-0 left-0 w-6/12 xl:w-full"
+            className="text-lg xl:text-2xl p-6 absolute top-0 lg:bottom-0 lg:top-auto right-0 left-0 w-6/12 xl:w-full"
             animate={controls}
             initial={{ x: -400 }}
             variants={{
@@ -170,7 +175,7 @@ const Item = ({
           >
             {name}
             <br />
-            <div className="text-sm md:text-lg">{title}</div>
+            <div className="text-sm md:text-md xl:text-lg">{title}</div>
             <div className="italic text-sm md:text-md">
               {from} - {to ? to : "Current"}
             </div>
@@ -210,7 +215,7 @@ const Item = ({
             }}
           >
             <div
-              className="text-right text-sm md:text-lg lg:text-left"
+              className="text-right text-sm xl:text-lg lg:text-left"
               dangerouslySetInnerHTML={{ __html: description }}
             ></div>
             <motion.div
@@ -224,17 +229,17 @@ const Item = ({
               }}
             >
               <div
-                className="py-2 px-8 rounded-md border relative z-10 text-md text-white border-black bg-pumpkin-100 hover:bg-pumpkin-40 cursor-pointer"
+                className="py-2 px-8 border relative z-10 text-md text-white border-black bg-pumpkin-100 hover:bg-pumpkin-40 cursor-pointer"
                 onClick={() => router.push(`/works?type=${slug}`)}
               >
-                View Details
+                {lang.detail}
               </div>
-              <div className="absolute w-full h-full rounded-md bg-black z-0 left-1 top-1"></div>
+              <div className="absolute w-full h-full bg-black z-0 left-1 top-1"></div>
             </motion.div>
           </motion.div>
         ) : null}
-      </div>
-      <div className="absolute w-full rounded-md h-full bg-black z-0 left-1 top-1"></div>
+      </motion.div>
+      <div className="absolute w-full h-full bg-earth-yellow-100 border-black border-2 z-0 left-0 top-0"></div>
     </motion.div>
   );
 };

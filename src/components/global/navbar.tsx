@@ -6,13 +6,14 @@ import { AnimatePresence, motion, useAnimation } from "framer-motion";
 import sectionSettings from "@/constant/section-settings";
 import useLanguage, { langOptions } from "@/store/use-language";
 import { cn } from "@/lib/utils";
+import LanguageWrapper from "./language-wrapper";
+import useActiveLanguage from "@/hooks/use-active-language";
 
 const Navbar = () => {
   const activeSection = useActiveSection((state) => state.activeSection);
   const previousSection = useActiveSection((state) => state.previousSection);
   const controls = useAnimation();
   const activeLang = useLanguage((state) => state.activeLang);
-  const setActiveLang = useLanguage((state) => state.setActiveLang);
   const [openLangOption, setOpenLangOption] = useState<boolean>(false);
 
   useEffect(() => {
@@ -23,10 +24,13 @@ const Navbar = () => {
 
     for (let key in sectionSettings) {
       if (activeSection.no === Number(key)) {
+        console.log(activeSection);
         controls.start(sectionSettings[activeSection.no].navbarControlsName);
       }
     }
   }, [activeSection, previousSection, controls]);
+
+  // console.log(activeSection);
 
   const generateNavbarVariants = () => {
     let variants = {
@@ -39,14 +43,22 @@ const Navbar = () => {
     };
 
     let background = {
-      [1 as number]: sectionSettings[1].navbarBackgroundInClass,
+      initial: {
+        background: sectionSettings[1].navbarBackgroundInClass,
+        color: sectionSettings[1].navbarTextColor,
+        transition: { type: "spring", stiffness: 200, damping: 15 },
+      },
     };
 
     for (let key in sectionSettings) {
       const currentSection = sectionSettings[key as unknown as number];
       background = {
         ...background,
-        [key as unknown as number]: currentSection.navbarBackgroundInClass,
+        [currentSection.navbarControlsName]: {
+          background: currentSection.navbarBackground,
+          color: currentSection.navbarTextColor,
+          transition: { duration: 0 },
+        },
       };
 
       variants = {
@@ -86,6 +98,8 @@ const Navbar = () => {
     return variants;
   };
 
+  const { navbar: lang } = useActiveLanguage();
+
   if (!activeSection.no) return null;
 
   return (
@@ -100,8 +114,12 @@ const Navbar = () => {
       >
         <div className="w-full flex p-4 md:px-12 md:py-4 items-center justify-between border-b-2 border-black">
           <div>
-            <div className="text-2xl md:text-3xl font-bold !leading-none">CHAPTER {activeSection.no}</div>
-            <div className="text-md md:text-xl !leading-none">{activeSection.title}</div>
+            <div className="text-2xl md:text-3xl font-bold !leading-none">
+              {lang.chapter.toUpperCase()} {activeSection.no}
+            </div>
+            <div className="text-md md:text-xl !leading-none">
+              {lang[String(activeSection.no) as keyof typeof lang]}
+            </div>
           </div>
           <div className="md:flex md:items-center  gap-2">
             <motion.div
@@ -110,42 +128,25 @@ const Navbar = () => {
               variants={generateNavbarCircleVariants()}
               animate={controls}
             ></motion.div>
-            {/* <div className="relative z-50">
-              <div
-                className="py-1 px-2 border-black border cursor-pointer"
+            <div className="relative z-50">
+              <motion.div
+                animate={controls}
+                whileHover={{ x: 0, y: 0, transition: { ease: "circInOut", duration: 0.2, delay: 0.01 } }}
+                initial={{ x: -5, y: -5, background: sectionSettings[1].navbarBackground }}
+                variants={generateNavbarVariants().background}
+                className="py-1 px-2 relative z-50 border-black border-2 cursor-pointer"
                 onClick={() => setOpenLangOption(!openLangOption)}
               >
                 {activeLang}
-              </div>
-              {openLangOption ? (
-                <div className="absolute flex gap-1 left-0 right-0 bottom-[-220%] flex-col shadow-sm ">
-                  <motion.div
-                    className={cn("border-black border py-1 px-2 cursor-pointer")}
-                    animate={controls}
-                    initial={{ background: sectionSettings[1].navbarBackground }}
-                    variants={generateNavbarVariants().variants}
-                    onClick={() => {
-                      setOpenLangOption(false);
-                      setActiveLang(langOptions.id);
-                    }}
-                  >
-                    id
-                  </motion.div>
-                  <motion.div
-                    className={cn("border-black border py-1 px-2 cursor-pointer")}
-                    animate={controls}
-                    initial={{ background: sectionSettings[1].navbarBackground }}
-                    variants={generateNavbarVariants().variants}
-                    onClick={() => {
-                      setOpenLangOption(false);
-                      setActiveLang(langOptions.en);
-                    }}
-                  >
-                    en
-                  </motion.div>
-                </div>
-              ) : null}
-            </div> */}
+              </motion.div>
+              <div className="absolute w-full h-full bg-black border-black border-2 z-40 left-0 top-0"></div>
+              <LanguageWrapper
+                variantsNavbar={generateNavbarVariants().variants}
+                controls={controls}
+                isOpened={openLangOption}
+                onClose={() => setOpenLangOption(false)}
+              ></LanguageWrapper>
+            </div>
           </div>
         </div>
       </motion.nav>

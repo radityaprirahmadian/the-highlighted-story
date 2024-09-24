@@ -1,7 +1,10 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import Navbar from "./(component)/navbar";
 import generateSelectedPortfolioType from "@/lib/selected-items";
-import NotFound from "./(component)/not-found";
+
+import Wrapper from "./(component)/wrapper";
 
 const Index = ({
   params,
@@ -10,17 +13,19 @@ const Index = ({
   params: { portfolio: string };
   searchParams: { [key: string]: string | string[] | undefined };
 }) => {
-  const { selectedPortfolioType, portfolioItem } = generateSelectedPortfolioType({ params, searchParams });
+  const [sex, setSex] = useState<any>();
+  const [sex2, setSex2] = useState<any>();
+
+  useEffect(() => {
+    const { selectedPortfolioType, portfolioItem } = generateSelectedPortfolioType({ params, searchParams });
+    setSex(selectedPortfolioType);
+    setSex2(portfolioItem);
+  }, []);
 
   return (
     <>
-      <Navbar
-        type={selectedPortfolioType?.name || undefined}
-        title={selectedPortfolioType?.availableItems[portfolioItem]?.name || undefined}
-      ></Navbar>
-      <div className="pt-5 w-8/12 m-auto">
-        {selectedPortfolioType?.availableItems[portfolioItem]?.component || <NotFound />}
-      </div>
+      <Navbar type={sex?.name || undefined} title={sex?.availableItems[sex2]?.name || undefined}></Navbar>
+      <Wrapper>{sex?.availableItems[sex2]?.component}</Wrapper>
     </>
   );
 };

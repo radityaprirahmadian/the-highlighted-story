@@ -12,7 +12,7 @@ interface LanguageInterface {
 }
 
 const initialValue = {
-  activeLang: (typeof window !== "undefined" ? window.localStorage.getItem("lang") : langOptions.en) as string,
+  activeLang: ((typeof window !== "undefined" && window.localStorage.getItem("lang")) || langOptions.en) as string,
 };
 
 const useLanguage = create<LanguageInterface>()((set) => ({

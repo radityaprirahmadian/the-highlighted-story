@@ -11,7 +11,7 @@ const SectionWrapper = ({
 }: {
   parentRef: RefObject<HTMLElement>;
   elementRef: RefObject<HTMLElement>;
-  children: ReactElement;
+  children: ReactElement | ReactElement[];
   sectionNumber: number;
 }) => {
   const setActiveSection = useActiveSection((state) => state.setActiveSection);
