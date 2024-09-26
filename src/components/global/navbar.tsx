@@ -24,13 +24,10 @@ const Navbar = () => {
 
     for (let key in sectionSettings) {
       if (activeSection.no === Number(key)) {
-        console.log(activeSection);
         controls.start(sectionSettings[activeSection.no].navbarControlsName);
       }
     }
   }, [activeSection, previousSection, controls]);
-
-  // console.log(activeSection);
 
   const generateNavbarVariants = () => {
     let variants = {

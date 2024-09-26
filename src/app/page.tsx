@@ -30,13 +30,11 @@ const Index = () => {
 
     const isOldVisitor = JSON.parse(localStorage.getItem("old-visitor") as string);
     if (isOldVisitor) {
-      console.log("sdasda");
       setActiveSection({ no: 1, title: sectionSettings[1].title });
       // tes?.current?.scrollTo({ top: tes.current?.scrollTop + 500 });
     }
   }, [setPreviousSection, setActiveSection]);
 
-  console.log(activeSection);
   return (
     <div
       className="bg-light-orange-50 h-full relative z-10  border-2 border-black overflow-y-auto overflow-x-hidden"
