@@ -228,13 +228,15 @@ const Item = ({
                 transition: { type: "spring", stiffness: 500, damping: 0.2 },
               }}
             >
-              <div
-                className="py-2 px-8 border relative z-10 text-md text-white border-black bg-pumpkin-100 hover:bg-pumpkin-40 cursor-pointer"
+              <motion.div
+                initial={{ x: -6, y: -6 }}
+                whileHover={{ x: 0, y: 0, transition: { ease: "circInOut", duration: 0.2, delay: 0.01 } }}
+                className="py-2 px-8 border relative z-10 text-md text-white border-black bg-pumpkin-100 cursor-pointer"
                 onClick={() => router.push(`/works?type=${slug}`)}
               >
                 {lang.detail}
-              </div>
-              <div className="absolute w-full h-full bg-black z-0 left-1 top-1"></div>
+              </motion.div>
+              <div className="absolute w-full h-full bg-black z-0 left-0 top-0"></div>
             </motion.div>
           </motion.div>
         ) : null}

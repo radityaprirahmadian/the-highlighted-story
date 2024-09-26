@@ -7,7 +7,12 @@ import { useRouter } from "next/navigation";
 
 export const BentoGrid = ({ className, children }: { className?: string; children?: React.ReactNode }) => {
   return (
-    <div className={cn("grid md:auto-rows-[23rem] grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto ", className)}>
+    <div
+      className={cn(
+        "grid md:auto-rows-[23rem] grid-cols-1 md:grid-cols-3 gap-5 lg:gap-7 max-w-7xl mx-auto ",
+        className
+      )}
+    >
       {children}
     </div>
   );
@@ -38,7 +43,7 @@ export const BentoGridItem = ({
   return (
     <div className={cn("row-span-1 relative dark:bg-black dark:border-white/[0.2] ", className)}>
       <motion.div
-        initial={{ x: -8, y: -8 }}
+        initial={{ x: -7, y: -7 }}
         whileHover={{ x: 0, y: 0, transition: { ease: "circInOut", duration: 0.2, delay: 0.01 } }}
         className={cn(`relative z-10 p-4 border-2 h-full border-black`, background)}
         onMouseOver={() => controls.start("hovered")}

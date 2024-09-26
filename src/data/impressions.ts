@@ -16,12 +16,12 @@ const impressionData = [
     linkedIn: "https://www.linkedin.com/in/zaenal-muttaqien/",
   },
   {
-    order: 11,
-    name: "Ardiansyah Purwanto",
+    order: 12,
+    name: "Ardiansyah Parwanto",
     position: "Senior Frontend Developer",
-    office: "Sinarmas",
+    office: "SQE (S-Quantum Engine)",
     id: "ardiansyah",
-    linkedIn: "https://www.linkedin.com/in/malikzulfikar/",
+    linkedIn: "https://www.linkedin.com/in/ardiansyah-parwanto/",
   },
   {
     order: 9,
@@ -29,7 +29,7 @@ const impressionData = [
     position: "Senior Software Engineer",
     office: "FAR Capital",
     id: "ayi",
-    linkedIn: "https://www.linkedin.com/in/malikzulfikar/",
+    linkedIn: "https://www.linkedin.com/in/bonk007/",
   },
   {
     order: 1,
@@ -37,11 +37,11 @@ const impressionData = [
     position: "API Developer",
     office: "Hitachi Channel Solution",
     id: "bariq",
-    linkedIn: "https://www.linkedin.com/in/malikzulfikar/",
+    linkedIn: "https://www.linkedin.com/in/bariqmbani/",
   },
   {
     order: 7,
-    name: "David Ferdinand Imanuel Manurung",
+    name: "David Ferdinand",
     position: "Software Engineer",
     office: "Autobahn Security",
     id: "david",
@@ -56,7 +56,7 @@ const impressionData = [
     id: "rais",
   },
   {
-    order: 12,
+    order: 11,
     name: "Anugerah Prima Bagaskara",
     position: "Frontend Developer",
     office: "PT Neural Technologies Indonesia",

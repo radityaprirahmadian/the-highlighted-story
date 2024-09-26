@@ -1,6 +1,15 @@
 "use client";
 
+import AvanaDashboard from "@/app/[portfolio]/(component)/project-item/avana-dashboard";
+import BNI from "@/app/[portfolio]/(component)/project-item/bni";
+import LereroLMS from "@/app/[portfolio]/(component)/project-item/lerero-lms";
+import MasjidRamah from "@/app/[portfolio]/(component)/project-item/masjid-ramah";
+import PLN from "@/app/[portfolio]/(component)/project-item/pln";
+import PPBS from "@/app/[portfolio]/(component)/project-item/ppbs";
+import SimonevKemenko from "@/app/[portfolio]/(component)/project-item/simonev-kemenko";
 import Avana from "@/app/[portfolio]/(component)/work-item/avana";
+import Docheck from "@/app/[portfolio]/(component)/work-item/docheck";
+import Lerero from "@/app/[portfolio]/(component)/work-item/lerero";
 
 import itemType from "@/constant/item-type";
 import projectType from "@/constant/selected-projects";
@@ -35,7 +44,7 @@ const generateSelectedPortfolioType = ({
     },
     [workType.docheck.slug]: {
       name: workType.docheck.text,
-      component: <Avana />,
+      component: <Docheck />,
     },
     [workType.rekalogi.slug]: {
       name: workType.rekalogi.text,
@@ -43,38 +52,38 @@ const generateSelectedPortfolioType = ({
     },
     [workType.lerero.slug]: {
       name: workType.lerero.text,
-      component: <Avana />,
+      component: <Lerero />,
     },
   };
 
   const availableProjects = {
     [projectType.masjidRamahKemenag.slug]: {
       name: projectType.masjidRamahKemenag.text,
-      component: <Avana />,
+      component: <MasjidRamah />,
     },
     [projectType.plnIconPlus.slug]: {
       name: projectType.plnIconPlus.text,
-      component: <Avana />,
+      component: <PLN />,
     },
     [projectType.bniBlueBirdTraveloka.slug]: {
       name: projectType.bniBlueBirdTraveloka.text,
-      component: <Avana />,
+      component: <BNI />,
     },
     [projectType.ppbs.slug]: {
       name: projectType.ppbs.text,
-      component: <Avana />,
+      component: <PPBS />,
     },
     [projectType.lereroLMS.slug]: {
       name: projectType.lereroLMS.text,
-      component: <Avana />,
+      component: <LereroLMS />,
     },
     [projectType.simonevKemenko.slug]: {
       name: projectType.simonevKemenko.text,
-      component: <Avana />,
+      component: <SimonevKemenko />,
     },
     [projectType.avana.slug]: {
       name: projectType.avana.text,
-      component: <Avana />,
+      component: <AvanaDashboard />,
     },
   };
 

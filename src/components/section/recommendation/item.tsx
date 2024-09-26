@@ -10,17 +10,18 @@ const Item = ({
   displayedData,
 }: {
   index: number;
-  displayedData: { name: string; position: string; office: string; linkedIn: string; id: string };
+  displayedData: { name: string; position: string; office: string; linkedIn: string; id: string; order: number };
 }) => {
   const control = useAnimation();
   const { impression: lang } = useActiveLanguage();
   return (
     <motion.div
       key={index}
+      whileHover={{ scale: 1.15 }}
       className={cn(
         "border-black border-2 col-span-3 p-4 flex gap-2 flex-col justify-between relative",
         index % 2 === 0 ? "row-span-1" : "row-span-2",
-        displayedData ? "opacity-100 bg-earth-yellow-100" : "opacity-60 bg-white"
+        displayedData ? "opacity-100 bg-earth-yellow-100" : "opacity-50 bg-white"
       )}
     >
       {displayedData ? (
@@ -28,6 +29,7 @@ const Item = ({
           <div className="text-md">
             <p dangerouslySetInnerHTML={{ __html: `&ldquo;${lang[displayedData.id as keyof typeof lang]}&rdquo;` }}></p>
           </div>
+
           <div className="relative text-sm mt-3">
             <Link href={displayedData.linkedIn} target="_blank" className="flex items-center gap-2 cursor-pointer">
               {displayedData.name}{" "}

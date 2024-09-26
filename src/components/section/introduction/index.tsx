@@ -24,13 +24,13 @@ const Introduction = () => {
         <div className="basis-full w-full md:basis-5/12 lg:basis-6/12 px-6 flex items-center justify-center">
           <div className="relative w-[80%] sm:w-[50%] aspect-square md:w-[300px] md:h-[260px] lg:w-[400px] lg:h-[380px]">
             <div className="bg-light-orange-80 h-full w-full z-10 relative border-2 border-black">
-              <Image
+              {/* <Image
                 src={"/test.png"}
                 alt="asdasd"
                 width={450}
                 height={450}
                 className="absolute bottom-0 left-2/4 translate-x-[-45%] z-20"
-              ></Image>
+              ></Image> */}
               <Image
                 src={"/test-black.png"}
                 alt="asdasd"

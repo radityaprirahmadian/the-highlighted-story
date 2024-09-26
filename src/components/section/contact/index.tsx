@@ -88,7 +88,6 @@ const Contacts = ({ parentRef }: { parentRef: any }) => {
             <div className="relative h-fit row-span-1 -mt-2.5 lg:mt-8 col-span-5 md:col-span-3 lg:col-span-2  xl:col-span-2 row-start-3 lg:row-start-4 col-start-6 md:col-start-6 lg:col-start-10 xl:col-start-11">
               <motion.a
                 href={connectData.gmail}
-                target="_blank"
                 initial={{ x: -5, y: -5 }}
                 whileHover={{ x: 0, y: 0, transition: { ease: "circInOut", duration: 0.2, delay: 0.01 } }}
                 className="relative z-10 bg-white text-black border-2 border-black p-5 cursor-pointer flex items-center justify-center"

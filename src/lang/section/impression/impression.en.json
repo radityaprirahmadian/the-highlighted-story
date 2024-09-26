@@ -1,13 +1,13 @@
 {
-  "title": "<span class=\"text-xl lg:text-3xl py-1 px-2 bg-falu-red-50 font-normal text-white\">Everyone</span> on this earth is <span class=\"text-xl lg:text-3xl py-1 px-2 bg-falu-red-50 font-normal text-white\">  talking about him!</span>",
+  "title": "<span class=\"text-xl lg:text-3xl py-1 px-2 bg-falu-red-60 font-normal text-white\">Everyone</span> on this earth is <span class=\"text-xl lg:text-3xl py-1 px-2 bg-falu-red-60 font-normal text-white\">  talking about him!</span>",
   "malik": "He excels at <span class='py-1 px-2 bg-pumpkin-100 font-normal text-white'>identifying the root cause of issues</span>, enabling QA teams to quickly understand and address problems.",
   "zaenal": "Has an exceptional ability to <span class='py-1 px-2 bg-pumpkin-100 font-normal text-white'>understand briefs clearly</span>, and his strong communication skills combined with his deep knowledge of Frontend Web Development make it easy for the team to execute tasks efficiently.",
-  "ardiansyah": "magni dolores eos qui ratione vest, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi",
-  "ayi": "Always understanding!",
-  "bariq": "Lorem ipsum cing elit, sed do eiusmod tempor i",
-  "david": "He has a  <span class='py-1 px-2 bg-pumpkin-100 font-normal text-white'>great eye for detail</span>, and his focus on delivering each component efficiently made everything run smoothly.",
-  "rais": "Radit constantly  <span class='py-1 px-2 bg-pumpkin-100 font-normal text-white'>seeking out new technologies and knowledge</span>, always eager to learn and stay ahead in the field. He also dedicated hardworker to achieve outstanding result",
-  "bagas": "He has been both <span class='py-1 px-2 bg-pumpkin-100 font-normal text-white'>a coach and a trusted companion</span>, guiding me from college through my entire journey into Frontend Development.",
+  "ardiansyah": "There’s no need to explain things in detail to him, because he <span class='py-1 px-2 bg-pumpkin-100 font-normal text-white'>quickly grasps</span> the meaning of the given brief.",
+  "ayi": "Very <span class='py-1 px-2 bg-pumpkin-100 font-normal text-white'>outstanding</span> person in his field.",
+  "bariq": "He is a <span class='py-1 px-2 bg-pumpkin-100 font-normal text-white'>fast learner</span> and always give attention to details.",
+  "david": "He has a <span class='py-1 px-2 bg-pumpkin-100 font-normal text-white'>great eye for detail.</span>",
+  "rais": "Constantly <span class='py-1 px-2 bg-pumpkin-100 font-normal text-white'>seeking out new technologies and knowledge</span>, always eager to learn and stay ahead in the field.",
+  "bagas": "He has been both <span class='py-1 px-2 bg-pumpkin-100 font-normal text-white'>a coach and a trusted companion</span>.",
   "locked": "LOCKED",
   "at": "at"
 }
