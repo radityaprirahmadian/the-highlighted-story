@@ -7,7 +7,7 @@ const courier = Courier_Prime({ subsets: ["latin"], weight: ["400", "700"], disp
 
 export const metadata: Metadata = {
   title: "the highlighted story | radityaprirahmadian",
-  description: "wkkwkwkwkwkw",
+  description: "Once upon a time there was a story that began.....",
 };
 
 export default function RootLayout({

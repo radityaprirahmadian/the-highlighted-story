@@ -18,6 +18,8 @@ const Content = ({
               src={content.image}
               width="1200"
               height="200"
+              loading="lazy"
+              placeholder="blur"
               alt={content.title}
               className="border-black border-2"
             ></Image>
