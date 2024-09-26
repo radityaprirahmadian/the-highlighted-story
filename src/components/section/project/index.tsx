@@ -72,7 +72,7 @@ const Projects = ({ parentRef }: { parentRef: any }) => {
       <motion.div
         ref={sectionRef}
         id="section-4"
-        className="bg-earth-yellow-100  text-white py-24 md:pt-24 md:pb-32 lg:pt-32 lg:pb-48 px-4 lg:px-24 xl:px-40 w-full h-fit"
+        className="bg-earth-yellow-100  text-white py-24 md:pt-24 md:pb-32 lg:pt-32 lg:pb-48 px-6 lg:px-24 xl:px-40 w-full h-fit"
       >
         <h2
           className="mb-10 lg:mb-24 text-black text-center text-xl lg:text-3xl"

@@ -24,7 +24,7 @@ const Skills = ({ parentRef }: { parentRef: any }) => {
       <motion.div
         ref={sectionRef}
         id="section-two"
-        className="bg-carribean-60 text-white py-24 md:pt-24 md:pb-32 lg:pt-32 lg:pb-48 px-4 w-full h-fit"
+        className="bg-carribean-60 text-white py-24 md:pt-24 md:pb-32 lg:pt-32 lg:pb-48 px-6 w-full h-fit"
       >
         <h2 className="text-lg lg:text-xl text-center xl:text-xl lg:mx-24 xl:mx-40">
           {lang.dedicate}{" "}

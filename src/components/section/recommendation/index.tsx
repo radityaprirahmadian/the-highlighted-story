@@ -13,7 +13,7 @@ const Recommendations = ({ parentRef }: { parentRef: any }) => {
       <motion.div
         ref={sectionRef}
         id="section-4"
-        className="bg-carribean-20 text-black py-24 md:pt-24 md:pb-32 lg:pt-32 lg:pb-48 px-4 w-full h-fit"
+        className="bg-carribean-20 text-black py-24 md:pt-24 md:pb-32 lg:pt-32 lg:pb-48 px-6 w-full h-fit"
       >
         <h2
           className="mb-10 lg:mb-24 text-lg lg:text-xl text-white text-center"
