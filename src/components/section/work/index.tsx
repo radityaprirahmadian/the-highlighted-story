@@ -19,7 +19,7 @@ const Works = ({ parentRef }: { parentRef: any }) => {
       <motion.div
         ref={sectionRef}
         id="section-4"
-        className="bg-falu-red-60 text-white py-24 md:pt-24 md:pb-32 lg:pt-32 lg:pb-48 px-10 w-full h-fit"
+        className="bg-falu-red-60 text-white py-24 md:pt-24 md:pb-32 lg:pt-32 lg:pb-48 px-4 w-full h-fit"
       >
         <h2 className="text-left mb-10 lg:mb-24 text-lg lg:text-xl lg:px-28">
           <span className="py-1 px-2 bg-carribean-10 text-white text-2xl lg:text-3xl">3</span> {lang.titleOne}, <br />
