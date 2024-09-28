@@ -5,6 +5,11 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import React, { useRef } from "react";
 
+import github from "../../../../public/github.png";
+import wa from "../../../../public/wa.png";
+import gmail from "../../../../public/gmail.png";
+import linkedin from "../../../../public/linkedin.png";
+
 const Contacts = ({ parentRef }: { parentRef: any }) => {
   const sectionRef = useRef(null);
   const { connect: lang } = useActiveLanguage();
@@ -54,7 +59,7 @@ const Contacts = ({ parentRef }: { parentRef: any }) => {
                 whileHover={{ x: 0, y: 0, transition: { ease: "circInOut", duration: 0.2, delay: 0.01 } }}
                 className="relative z-10 bg-white text-black border-2 border-black p-5 cursor-pointer flex items-center justify-center"
               >
-                <Image src={"/github.png"} loading="lazy" placeholder="blur" alt="github" width="75" height="75" />
+                <Image src={github} loading="lazy" placeholder="blur" alt="github" width="75" height="75" />
               </motion.a>
               <div className="absolute w-full h-full bg-black z-0 left-0 top-0"></div>
             </div>
@@ -67,7 +72,7 @@ const Contacts = ({ parentRef }: { parentRef: any }) => {
                 whileHover={{ x: 0, y: 0, transition: { ease: "circInOut", duration: 0.2, delay: 0.01 } }}
                 className="relative z-10 bg-white text-black border-2 border-black p-5 cursor-pointer flex items-center justify-center"
               >
-                <Image src={"/wa.png"} loading="lazy" placeholder="blur" alt="github" width="75" height="75" />
+                <Image src={wa} loading="lazy" placeholder="blur" alt="github" width="75" height="75" />
               </motion.a>
               <div className="absolute w-full h-full bg-black z-0 left-0 top-0"></div>
             </div>
@@ -80,7 +85,7 @@ const Contacts = ({ parentRef }: { parentRef: any }) => {
                 whileHover={{ x: 0, y: 0, transition: { ease: "circInOut", duration: 0.2, delay: 0.01 } }}
                 className="relative z-10 bg-white text-black border-2 border-black p-5 cursor-pointer flex items-center justify-center"
               >
-                <Image src={"/linkedin.png"} loading="lazy" placeholder="blur" alt="github" width="75" height="75" />
+                <Image src={linkedin} loading="lazy" placeholder="blur" alt="github" width="75" height="75" />
               </motion.a>
               <div className="absolute w-full h-full bg-black z-0 left-0 top-0"></div>
             </div>
@@ -92,7 +97,7 @@ const Contacts = ({ parentRef }: { parentRef: any }) => {
                 whileHover={{ x: 0, y: 0, transition: { ease: "circInOut", duration: 0.2, delay: 0.01 } }}
                 className="relative z-10 bg-white text-black border-2 border-black p-5 cursor-pointer flex items-center justify-center"
               >
-                <Image src={"/gmail.png"} loading="lazy" placeholder="blur" alt="github" width="75" height="75" />
+                <Image src={gmail} loading="lazy" placeholder="blur" alt="github" width="75" height="75" />
               </motion.a>
               <div className="absolute w-full h-full bg-black z-0 left-0 top-0"></div>
             </div>

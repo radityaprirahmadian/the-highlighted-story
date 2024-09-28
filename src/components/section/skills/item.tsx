@@ -1,9 +1,9 @@
 import { cn } from "@/lib/utils";
 import { motion, useAnimation, useMotionValueEvent, useScroll } from "framer-motion";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React, { useEffect } from "react";
 
-const Item = ({ isActive, image, onClick }: { isActive: boolean; image: string; onClick: () => void }) => {
+const Item = ({ isActive, image, onClick }: { isActive: boolean; image: StaticImageData; onClick: () => void }) => {
   const controls = useAnimation();
 
   useEffect(() => {
@@ -37,7 +37,7 @@ const Item = ({ isActive, image, onClick }: { isActive: boolean; image: string; 
         onClick={() => onClick()}
         className="aspect-square relative z-10 flex items-center justify-center bg-earth-yellow-100 border-black border-2 text-center text-black cursor-pointer"
       >
-        <Image alt="tes" src={image} width="60" height="60" className="p"></Image>
+        <Image alt="tes" src={image} loading="lazy" placeholder="blur" width="60" height="60" className="p"></Image>
       </motion.div>
       <div className="absolute w-full h-full bg-falu-red-10 border-black border-2 z-0 left-0 top-0"></div>
     </motion.div>

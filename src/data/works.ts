@@ -1,3 +1,7 @@
+import docheck from "../../public/docheck.png";
+import avana from "../../public/avana.webp";
+import lerero from "../../public/lerero.png";
+
 const worksData = [
   // {
   //   image: "/rekalogi-4.png",
@@ -9,7 +13,7 @@ const worksData = [
   //   id: "rekalogi",
   // },
   {
-    image: "/docheck.png",
+    image: docheck,
     name: "DoCheck",
     from: "Mar 2021",
     title: "Frontend Web Developer",
@@ -18,7 +22,7 @@ const worksData = [
     id: "docheck",
   },
   {
-    image: "/avana.webp",
+    image: avana,
     name: "Avana",
     title: "Frontend Web Developer",
     from: "Mar 2022",
@@ -27,7 +31,7 @@ const worksData = [
     id: "avana",
   },
   {
-    image: "/lerero.png",
+    image: lerero,
     name: "Lerero (The KPI Institute)",
     title: "Frontend Web Developer",
     from: "Apr 2023",

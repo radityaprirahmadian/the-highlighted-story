@@ -89,10 +89,10 @@ const Projects = ({ parentRef }: { parentRef: any }) => {
               slug={item.slug}
               background={
                 i % 3 === 0
-                  ? "bg-light-orange-80 text-black"
+                  ? "bg-light-orange-50 text-black"
                   : i % 2 === 0
-                  ? "bg-persian-red-20 text-white"
-                  : "bg-carribean-20"
+                  ? "bg-falu-red-50 text-white"
+                  : "bg-carribean-50"
               }
               header={item.header}
               className={i === 3 || i === 6 ? "md:col-span-2" : ""}

@@ -5,6 +5,7 @@ import DecorationOne from "./decoration-one";
 import DecorationTwo from "./decoration-two";
 import Right from "./right";
 
+import imagePerson from "../../../../public/test-black.png";
 const Introduction = () => {
   return (
     <AnimatePresence>
@@ -32,7 +33,9 @@ const Introduction = () => {
                 className="absolute bottom-0 left-2/4 translate-x-[-45%] z-20"
               ></Image> */}
               <Image
-                src={"/test-black.png"}
+                src={imagePerson}
+                loading="lazy"
+                placeholder="blur"
                 alt="asdasd"
                 width={450}
                 height={450}

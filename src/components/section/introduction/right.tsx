@@ -18,7 +18,8 @@ const Right = () => {
       <Stars className="bottom-24 right-[47%]" delay={3} rotate={100}></Stars>
 
       <p className="text-md md:text-lg">
-        {lang.hisname} <span className="py-1 px-2 bg-carribean-10 text-white">Raditya Prirahmadian,</span>{" "}
+        {lang.hisname}{" "}
+        <span className="py-1 px-2 bg-carribean-50 text-white text-lg md:text-xl">Raditya Prirahmadian,</span>{" "}
         {lang.indefinite}
       </p>
       <h1 className="text-3xl lg:text-5xl font-bold mt-1">FRONTEND WEB DEVELOPER</h1>
