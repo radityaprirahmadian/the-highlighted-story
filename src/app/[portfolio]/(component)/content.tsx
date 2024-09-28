@@ -1,13 +1,13 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { cn } from "@/lib/utils";
 
 const Content = ({
   contents,
 }: {
-  contents: { image: string; title: string; techs: string[]; description: string }[];
+  contents: { image: StaticImageData; title: string; techs: string[]; description: string }[];
 }) => {
   return (
     <section>
