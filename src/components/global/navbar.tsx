@@ -2,7 +2,7 @@
 
 import useActiveSection from "@/store/use-active-section";
 import React, { useEffect, useState } from "react";
-import { AnimatePresence, motion, useAnimation } from "framer-motion";
+import { AnimatePresence, delay, motion, useAnimation } from "framer-motion";
 import sectionSettings from "@/constant/section-settings";
 import useLanguage, { langOptions } from "@/store/use-language";
 import { cn } from "@/lib/utils";
@@ -35,7 +35,7 @@ const Navbar = () => {
         y: 0,
         background: sectionSettings[1].navbarBackground,
         color: sectionSettings[1].navbarTextColor,
-        transition: { type: "spring", stiffness: 200, damping: 15 },
+        transition: { type: "spring", stiffness: 200, damping: 15, delay: 0.75 },
       },
     };
 
@@ -76,7 +76,7 @@ const Navbar = () => {
       initial: {
         x: -20,
         background: "#036977",
-        transition: { type: "spring", stiffness: 250, damping: 15, delay: 1 },
+        transition: { type: "spring", stiffness: 250, damping: 15, delay: 1.25 },
       },
     };
 

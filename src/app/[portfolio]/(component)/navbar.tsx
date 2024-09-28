@@ -27,7 +27,7 @@ const Navbar = ({ type, title }: { type: string | undefined; title: string | und
         }}
         animate={{
           y: 0,
-          transition: { type: "spring", stiffness: 200, damping: 15 },
+          transition: { type: "spring", stiffness: 200, damping: 15, delay: 0.25 },
         }}
       >
         <div className="w-full relative text-left p-4 md:px-12  md:py-4 border-b-3 flex items-center justify-between border-black">

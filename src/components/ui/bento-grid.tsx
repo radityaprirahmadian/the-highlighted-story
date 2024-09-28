@@ -68,7 +68,7 @@ export const BentoGridItem = ({
         <div className="flex flex-col justify-between flex-wrap h-full">
           {header}
           <div>
-            <div className="font-normal text-lg lg:text-xl mt-6 ">{title}</div>
+            <div className="font-normal text-lg lg:text-xl mt-6">{title}</div>
             <div className="font-normal text-xs lg:text-xs mt-3">{description}</div>
             <div className="mt-4 flex flex-wrap gap-1">
               {tech?.map((item, i) => {
