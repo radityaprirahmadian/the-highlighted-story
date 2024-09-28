@@ -19,7 +19,7 @@ const Item = ({
       key={index}
       whileHover={{ scale: 1.15 }}
       className={cn(
-        "border-black border-2 col-span-3 p-4 flex gap-2 flex-col justify-between relative",
+        "border-black border-3 col-span-3 p-4 flex gap-2 flex-col justify-between relative",
         index % 2 === 0 ? "row-span-1" : "row-span-2",
         displayedData ? "opacity-100 bg-earth-yellow-100" : "opacity-50 bg-white"
       )}

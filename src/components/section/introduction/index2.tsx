@@ -66,7 +66,7 @@ const Introduction = () => {
                 whileHover={{ scale: 1.095, transition: { duration: 0.1 } }}
                 onClick={() => setActiveData(item)}
               >
-                <div className="bg-light-orange-90 w-full h-full border-2 relative z-10 border-black rounded-lg px-1 cursor-pointer">
+                <div className="bg-light-orange-90 w-full h-full border-3 relative z-10 border-black rounded-lg px-1 cursor-pointer">
                   {item.id}
                 </div>
                 <div className="absolute w-full h-full p-2 bg-black z-0 left-1 rounded-lg top-1"></div>

@@ -1,13 +1,13 @@
-import react from "../../public/react.png";
-import next from "../../public/next.png";
-import redux from "../../public/redux.png";
-import tailwind from "../../public/tailwind.png";
-import typesript from "../../public/typesript.png";
-import jest from "../../public/jest.jpg";
-import bootstrap from "../../public/bootstrap.png";
-import zustand from "../../public/zustand.png";
-import storybook from "../../public/storybook.png";
-import reactQuery from "../../public/react-query.png";
+import react from "@/../public/react.png";
+import next from "@/../public/next.png";
+import redux from "@/../public/redux.png";
+import tailwind from "@/../public/tailwind.png";
+import typesript from "@/../public/typesript.png";
+import jest from "@/../public/jest.jpg";
+import bootstrap from "@/../public/bootstrap.png";
+import zustand from "@/../public/zustand.png";
+import storybook from "@/../public/storybook.png";
+import reactQuery from "@/../public/react-query.png";
 
 const skillsData = [
   {

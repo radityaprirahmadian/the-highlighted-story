@@ -22,9 +22,9 @@ const Works = ({ parentRef }: { parentRef: any }) => {
         className="bg-falu-red-60 text-white py-24 md:pt-24 md:pb-32 lg:pt-32 lg:pb-48 px-6 w-full h-fit"
       >
         <h2 className="text-left mb-10 lg:mb-24 text-lg lg:text-xl lg:px-28">
-          <span className="py-1 px-2 bg-carribean-10 text-white text-2xl lg:text-3xl">3</span> {lang.titleOne}, <br />
+          <span className="py-1 px-2 bg-carribean-50 text-white text-2xl lg:text-3xl">3</span> {lang.titleOne}, <br />
           {lang.mean} 3{" "}
-          <span className="py-1 px-2 bg-carribean-10 text-white text-2xl lg:text-3xl">
+          <span className="py-1 px-2 bg-carribean-50 text-white text-2xl lg:text-3xl">
             {activeLang === "en" && lang.different}{" "}
             <TypingEffect bg="bg-earth-yellow-100" height="h-7 lg:h-8">
               {[lang.titleTwo, lang.titleThree]}

@@ -1,24 +1,29 @@
+import avanaDashboard from "@/../public/works/avana/avanadashboard.png";
+import avanaPortal from "@/../public/works/avana/avanaportal.png";
+import avanaRipple from "@/../public/works/avana/avanaripple.png";
+import avanaStorybook from "@/../public/works/avana/avanastorybook.png";
+
 const avanaContents = [
   {
-    image: "/works/avana/avanadashboard.png",
+    image: avanaDashboard,
     title: "AVANA DASHBOARD",
     techs: ["ReactJS", "Redux", "Tailwind", "Bulma", "Sass"],
     id: "avanaDashboard",
   },
   {
-    image: "/works/avana/avanaportal.png",
+    image: avanaPortal,
     title: "AVANA PORTAL",
     techs: ["ReactJS", "Laravel", "Redux", "Bulma", "Sass"],
     id: "avanaPortal",
   },
   {
-    image: "/works/avana/avanaripple.png",
+    image: avanaRipple,
     title: "AVANA RIPPLE",
     techs: ["ReactJS", "Redux", "Tailwind", "Bulma", "Sass"],
     id: "avanaRipple",
   },
   {
-    image: "/works/avana/avanastorybook.png",
+    image: avanaStorybook,
     title: "AVANA STORYBOOK",
     techs: ["Storybook", "Webpack", "Cypress", "Tailwind"],
     id: "avanaStorybook",

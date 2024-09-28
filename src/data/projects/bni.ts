@@ -1,6 +1,8 @@
+import bni from "@/../public/projects/bni.png";
+
 const bniContents = [
   {
-    image: "/projects/bni.png",
+    image: bni,
     title: "BNI x BLUEBIRD x TRAVELOKA",
     techs: ["NextJS", "Redux", "Typescript", "Redux Toolkit", "tailwindcss"],
     id: "bni",

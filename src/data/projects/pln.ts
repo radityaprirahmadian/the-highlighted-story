@@ -1,6 +1,8 @@
+import pln from "@/../public/pln.png";
+
 const plnContents = [
   {
-    image: "/pln.png",
+    image: pln,
     title: "PLN ICON PLUS",
     techs: ["NextJS", "Typescript", "tailwindcss", "daisyUI"],
     id: "plnIconPlus",

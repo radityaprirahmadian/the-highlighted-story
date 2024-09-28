@@ -43,9 +43,9 @@ export const BentoGridItem = ({
   return (
     <div className={cn("row-span-1 relative dark:bg-black dark:border-white/[0.2] ", className)}>
       <motion.div
-        initial={{ x: -7, y: -7 }}
+        initial={{ x: -9, y: -9 }}
         whileHover={{ x: 0, y: 0, transition: { ease: "circInOut", duration: 0.2, delay: 0.01 } }}
-        className={cn(`relative z-10 p-4 border-2 h-full border-black`, background)}
+        className={cn(`relative z-10 p-4 border-3 h-full border-black`, background)}
         onMouseOver={() => controls.start("hovered")}
         onMouseLeave={() => controls.start("unhovered")}
       >
@@ -56,9 +56,9 @@ export const BentoGridItem = ({
         >
           <div className="relative cursor-pointer" onClick={() => router.push(`/projects?type=${slug}`)}>
             <motion.div
-              initial={{ x: -6, y: -6 }}
+              initial={{ x: -8, y: -8 }}
               whileHover={{ x: 0, y: 0, transition: { ease: "circInOut", duration: 0.2, delay: 0.01 } }}
-              className="px-6 py-2 z-10 relative text-md border-black border-2 bg-pumpkin-100 text-white"
+              className="px-6 py-2 z-10 relative text-md border-black border-3 bg-pumpkin-100 text-white"
             >
               {lang.detail}
             </motion.div>
@@ -73,7 +73,7 @@ export const BentoGridItem = ({
             <div className="mt-4 flex flex-wrap gap-1">
               {tech?.map((item, i) => {
                 return (
-                  <div key={i} className="bg-light-orange-80 border-2 text-black text-xs border-black px-2 py-1">
+                  <div key={i} className="bg-light-orange-80 border-3 text-black text-xs border-black px-2 py-1">
                     {item}
                   </div>
                 );
@@ -83,7 +83,7 @@ export const BentoGridItem = ({
         </div>
       </motion.div>
       <motion.div
-        className="absolute w-full h-full border-black border-2 bg-earth-yellow-100 z-0 top-0 left-0"
+        className="absolute w-full h-full border-black border-3 bg-earth-yellow-100 z-0 top-0 left-0"
         animate={controls}
       ></motion.div>
     </div>

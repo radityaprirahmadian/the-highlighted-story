@@ -109,6 +109,9 @@ const config: Config = {
           "5": "hsl(var(--chart-5))",
         },
       },
+      borderWidth: {
+        3: "3px",
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",

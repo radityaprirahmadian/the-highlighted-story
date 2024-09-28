@@ -42,7 +42,7 @@ const Skills = ({ parentRef }: { parentRef: any }) => {
         <div className="flex items-start justify-center flex-col-reverse md:flex-row-reverse gap-10 lg:gap-20">
           <div className="md:sticky md:top-1/4 w-full md:basis-6/12 lg:basis-4/12 flex justify-end">
             <div className="relative w-full">
-              <div className="bg-earth-yellow-100 aspect-[4/6] sm:aspect-[4/2] md:aspect-square relative z-10 border-black border-2 text-black p-4 md:p-6 overflow-y-auto">
+              <div className="bg-earth-yellow-100 aspect-[4/6] sm:aspect-[4/2] md:aspect-square relative z-10 border-black border-3 text-black p-4 md:p-6 overflow-y-auto">
                 {active === -1 ? (
                   <div className="flex items-center justify-center w-full h-full p-4">
                     <div className="text-lg md:text-xl lg:text-2xl text-center flex items-center flex-col gap-5">
@@ -84,7 +84,7 @@ const Skills = ({ parentRef }: { parentRef: any }) => {
                   </>
                 )}
               </div>
-              <div className="absolute w-full h-full bg-falu-red-10 border-black border-2 z-0 left-2 top-2"></div>
+              <div className="absolute w-full h-full bg-falu-red-10 border-black border-3 z-0 left-2 top-2"></div>
             </div>
           </div>
 

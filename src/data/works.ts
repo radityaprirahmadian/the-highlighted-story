@@ -1,6 +1,6 @@
-import docheck from "../../public/docheck.png";
-import avana from "../../public/avana.webp";
-import lerero from "../../public/lerero.png";
+import docheck from "@/../public/docheck.png";
+import avana from "@/../public/avana.webp";
+import lerero from "@/../public/lerero.png";
 
 const worksData = [
   // {

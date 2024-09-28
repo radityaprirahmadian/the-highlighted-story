@@ -19,7 +19,7 @@ const Right = () => {
 
       <p className="text-md md:text-lg">
         {lang.hisname}{" "}
-        <span className="py-1 px-2 bg-carribean-50 text-white text-lg md:text-xl">Raditya Prirahmadian,</span>{" "}
+        <span className="py-1 px-2 bg-carribean-50 text-white text-xl md:text-2xl">Raditya Prirahmadian,</span>{" "}
         {lang.indefinite}
       </p>
       <h1 className="text-3xl lg:text-5xl font-bold mt-1">FRONTEND WEB DEVELOPER</h1>
@@ -34,13 +34,13 @@ const Right = () => {
           }}
         >
           <motion.div
-            initial={{ x: -7, y: -7 }}
+            initial={{ x: -8, y: -8 }}
             whileHover={{ x: 0, y: 0, transition: { ease: "circInOut", duration: 0.2, delay: 0.01 } }}
-            className="py-2 px-6 lg:px-12 border-2 relative z-10 text-sm lg:text-lg text-white border-black bg-persian-red-90 cursor-pointer"
+            className="py-2 px-6 lg:px-12 border-3 relative z-10 text-sm lg:text-lg text-white border-black bg-persian-red-90 cursor-pointer"
           >
             <Link href={"/cv.pdf"} target="_blank" dangerouslySetInnerHTML={{ __html: lang.downloadButton }}></Link>
           </motion.div>
-          <div className="absolute w-full h-full bg-light-orange-50 border-black border-2 z-0 top-0 left-0"></div>
+          <div className="absolute w-full h-full bg-light-orange-50 border-black border-3 z-0 top-0 left-0"></div>
         </motion.div>
       </div>
       <p className="mt-5" dangerouslySetInnerHTML={{ __html: lang.continue }}></p>

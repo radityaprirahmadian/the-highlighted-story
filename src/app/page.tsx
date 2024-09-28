@@ -37,7 +37,7 @@ const Index = () => {
 
   return (
     <div
-      className="bg-light-orange-50 h-full relative z-10  border-2 border-black overflow-y-auto overflow-x-hidden"
+      className="bg-light-orange-50 h-full relative z-10  border-3 border-black overflow-y-auto overflow-x-hidden"
       ref={scrollableDivRef}
     >
       <Navbar></Navbar>

@@ -21,7 +21,7 @@ const Content = ({
               loading="lazy"
               placeholder="blur"
               alt={content.title}
-              className="border-black border-2"
+              className="border-black border-3"
             ></Image>
             <h2 className="mt-4 font-bold mb-2 text-2xl">{content.title}</h2>
             <div className="text-md">

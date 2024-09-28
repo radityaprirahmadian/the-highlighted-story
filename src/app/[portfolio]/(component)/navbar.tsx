@@ -30,7 +30,7 @@ const Navbar = ({ type, title }: { type: string | undefined; title: string | und
           transition: { type: "spring", stiffness: 200, damping: 15 },
         }}
       >
-        <div className="w-full relative text-left p-4 md:px-12  md:py-4 border-b-2 flex items-center justify-between border-black">
+        <div className="w-full relative text-left p-4 md:px-12  md:py-4 border-b-3 flex items-center justify-between border-black">
           <div>
             <div className="text-2xl md:text-3xl font-bold leading-none">
               {type ?? "NOT FOUND"}
@@ -46,12 +46,12 @@ const Navbar = ({ type, title }: { type: string | undefined; title: string | und
               animate={controls}
               whileHover={{ x: 0, y: 0, transition: { ease: "circInOut", duration: 0.2, delay: 0.01 } }}
               initial={{ x: -5, y: -5, background: sectionSettings[1].navbarBackground }}
-              className="py-1 px-2 relative z-50 border-black border-2 cursor-pointer"
+              className="py-1 px-2 relative z-50 border-black border-3 cursor-pointer"
               onClick={() => setOpenLangOption(!openLangOption)}
             >
               {activeLang}
             </motion.div>
-            <div className="absolute w-full h-full bg-black border-black border-2 z-40 left-0 top-0"></div>
+            <div className="absolute w-full h-full bg-black border-black border-3 z-40 left-0 top-0"></div>
             <LanguageWrapper
               controls={controls}
               variantsNavbar={{ initial: { background: sectionSettings[1].navbarBackground } }}

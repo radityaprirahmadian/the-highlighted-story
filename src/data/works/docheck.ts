@@ -1,12 +1,15 @@
+import docheckadmin from "@/../public/works/docheck/docheckadmin.png";
+import dochecklanding from "@/../public/works/docheck/dochecklanding.png";
+
 const docheckContents = [
   {
-    image: "/works/docheck/docheckadmin.png",
+    image: docheckadmin,
     title: "DOCHECK ADMIN DASHBOARD",
     techs: ["NextJS", "Redux", "Typescript", "styled-component", "SaSS"],
     id: "docheckadmin",
   },
   {
-    image: "/works/docheck/dochecklanding.png",
+    image: dochecklanding,
     title: "DOCHECK LANDING PAGE",
     techs: ["Wordpress", "YoastSEO", "Elementor", "other wordpress libraries"],
     id: "dochecklanding",

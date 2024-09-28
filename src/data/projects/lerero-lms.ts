@@ -1,6 +1,8 @@
+import lereroLms from "@/../public/lererolms.png";
+
 const LereroLMSContents = [
   {
-    image: "/lererolms.png",
+    image: lereroLms,
     title: "LERERO LMS",
     techs: ["NextJS", "Jest", "RTL", "Typescript", "Bootstrap", "styled-components"],
     id: "lereroLms",

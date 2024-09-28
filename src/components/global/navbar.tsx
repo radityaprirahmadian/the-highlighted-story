@@ -109,7 +109,7 @@ const Navbar = () => {
         animate={controls}
         variants={generateNavbarVariants().variants}
       >
-        <div className="w-full flex p-4 md:px-12 md:py-4 items-center justify-between border-b-2 border-black">
+        <div className="w-full flex p-4 md:px-12 md:py-4 items-center justify-between border-b-3 border-black">
           <div>
             <div className="text-2xl md:text-3xl font-bold !leading-none">
               {lang.chapter.toUpperCase()} {activeSection.no}
@@ -120,7 +120,7 @@ const Navbar = () => {
           </div>
           <div className="md:flex md:items-center  gap-2">
             <motion.div
-              className="w-10 h-10 rounded-full hidden md:inline-block border-black border-2"
+              className="w-10 h-10 rounded-full hidden md:inline-block border-black border-3"
               initial={{ x: 500 }}
               variants={generateNavbarCircleVariants()}
               animate={controls}
@@ -131,12 +131,12 @@ const Navbar = () => {
                 whileHover={{ x: 0, y: 0, transition: { ease: "circInOut", duration: 0.2, delay: 0.01 } }}
                 initial={{ x: -5, y: -5, background: sectionSettings[1].navbarBackground }}
                 variants={generateNavbarVariants().background}
-                className="py-1 px-2 relative z-50 border-black border-2 cursor-pointer"
+                className="py-1 px-2 relative z-50 border-black border-3 cursor-pointer"
                 onClick={() => setOpenLangOption(!openLangOption)}
               >
                 {activeLang}
               </motion.div>
-              <div className="absolute w-full h-full bg-black border-black border-2 z-40 left-0 top-0"></div>
+              <div className="absolute w-full h-full bg-black border-black border-3 z-40 left-0 top-0"></div>
               <LanguageWrapper
                 variantsNavbar={generateNavbarVariants().variants}
                 controls={controls}

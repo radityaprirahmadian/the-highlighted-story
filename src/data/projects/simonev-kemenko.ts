@@ -1,6 +1,8 @@
+import simonev from "@/../public/projects/simonev.png";
+
 const simonevKemenkoContents = [
   {
-    image: "/projects/simonev.png",
+    image: simonev,
     title: "SIMONEV KEMENKO PMK",
     techs: ["ReactJS", "ContextAPI", "Bootstrap"],
     id: "simonevKemenko",

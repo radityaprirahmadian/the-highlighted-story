@@ -37,7 +37,7 @@ const LanguageWrapper = ({
         className="absolute gap-1 z-30 left-0 right-0 bottom-0 shadow-sm"
       >
         <motion.div
-          className={cn("border-black border-2 py-1 px-2 cursor-pointer")}
+          className={cn("border-black border-3 py-1 px-2 cursor-pointer")}
           animate={controls}
           initial={{ background: sectionSettings[1].navbarBackground }}
           variants={variantsNavbar}
@@ -59,7 +59,7 @@ const LanguageWrapper = ({
         className="absolute gap-1 z-20 left-0 right-0 bottom-0 shadow-sm"
       >
         <motion.div
-          className={cn("border-black border-2 py-1 px-2 cursor-pointer")}
+          className={cn("border-black border-3 py-1 px-2 cursor-pointer")}
           animate={controls}
           initial={{ background: sectionSettings[1].navbarBackground }}
           variants={variantsNavbar}

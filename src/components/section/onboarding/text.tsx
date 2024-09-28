@@ -9,7 +9,7 @@ const Text = () => {
       className="mb-5 text-xl px-4 w-full md:w-6/12 text-center"
       transition={{ ease: "easeInOut", duration: 0.5 }}
     >
-      Welcome to <span className="py-1 px-2 bg-carribean-10 text-white">The Highlighted Story</span> -
+      Welcome to <span className="py-1 px-2 bg-carribean-50 text-white">The Highlighted Story</span> -
     </motion.p>
   );
 };

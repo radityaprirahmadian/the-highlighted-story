@@ -24,7 +24,7 @@ const Introduction = () => {
         ></Image>
         <div className="basis-full w-full md:basis-5/12 lg:basis-6/12 px-6 flex items-center justify-center">
           <div className="relative w-[80%] sm:w-[50%] aspect-square md:w-[300px] md:h-[260px] lg:w-[400px] lg:h-[380px]">
-            <div className="bg-light-orange-80 h-full w-full z-10 relative border-2 border-black">
+            <div className="bg-light-orange-80 h-full w-full z-10 relative border-3 border-black">
               {/* <Image
                 src={"/test.png"}
                 alt="asdasd"
