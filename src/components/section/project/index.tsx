@@ -15,7 +15,15 @@ import simonev from "@/../public/projects/simonev.png";
 
 const ImageContainer = ({ src }: { src: StaticImageData }) => (
   <div className="flex flex-1 w-full min-h-40 md:min-h-10 bg-gradient-to-br overflow-hidden object-cover bg-earth-yellow-100 border-3 border-black">
-    <Image src={src} width={600} height={50} alt="image" className="object-cover"></Image>
+    <Image
+      src={src}
+      width={600}
+      height={50}
+      alt="image"
+      className="object-cover w-full"
+      loading="lazy"
+      placeholder="blur"
+    ></Image>
   </div>
 );
 

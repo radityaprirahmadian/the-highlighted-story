@@ -104,6 +104,8 @@ const Item = ({
             src={image}
             alt={name}
             width="200"
+            loading="lazy"
+            placeholder="blur"
             height="200"
             className="max-w-fit w-6/12 sm:w-3/12 md:w-[170px] h-auto lg:h-[50%] lg:w-auto object-cover object-left pl-4"
           ></Image>
