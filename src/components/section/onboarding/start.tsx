@@ -8,7 +8,7 @@ const StartButton = ({ onClick }: { onClick: () => void }) => {
       className="flex items-center w-full justify-center mt-5"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ ease: "easeInOut", duration: 1, delay: 0.8 }}
+      transition={{ ease: "easeInOut", duration: 1, delay: 1 }}
     >
       <motion.div
         className="relative"
