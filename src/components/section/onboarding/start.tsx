@@ -5,10 +5,10 @@ import sectionSettings from "@/constant/section-settings";
 const StartButton = ({ onClick }: { onClick: () => void }) => {
   return (
     <motion.div
-      className="flex items-center w-full justify-center"
+      className="flex items-center w-full justify-center mt-5"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ ease: "easeInOut", duration: 1, delay: 0.5 }}
+      transition={{ ease: "easeInOut", duration: 1, delay: 0.8 }}
     >
       <motion.div
         className="relative"
@@ -21,10 +21,14 @@ const StartButton = ({ onClick }: { onClick: () => void }) => {
           onClick();
         }}
       >
-        <div className="py-2 px-7 border relative z-10 text-white text-lg border-black bg-pumpkin-100 cursor-pointer">
-          Read Chapter 1: {sectionSettings[1].title}
-        </div>
-        <div className="absolute w-full h-full bg-black z-0 left-1 top-1"></div>
+        <motion.div
+          initial={{ x: -7, y: -7 }}
+          whileHover={{ x: 0, y: 0, transition: { ease: "circInOut", duration: 0.2, delay: 0.01 } }}
+          className="py-2 px-12 border-3 relative z-10 text-white text-lg border-black bg-pumpkin-100 cursor-pointer"
+        >
+          Chapter 1: {sectionSettings[1].title}
+        </motion.div>
+        <div className="absolute w-full h-full bg-black z-0 left-0 top-0"></div>
       </motion.div>
     </motion.div>
   );

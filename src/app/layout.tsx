@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-earth-yellow-100">
       <body className={cn(courier.className, "relative")}>
-        <main className="min-h-screen p-2 md:p-6 bg-earth-yellow-100 text-black flex items-start justify-center w-full overflow-y-hidden relative">
+        <main className="min-h-screen p-2 md:p-10 lg:p-6 bg-earth-yellow-100 text-black flex items-start justify-center w-full overflow-y-hidden relative">
           <div className="relative h-[95vh] md:h-[93vh] w-full max-w-[1440px]">
             {/* <Image
               src={"/circle.png"}
