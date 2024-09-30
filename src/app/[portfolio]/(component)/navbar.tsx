@@ -21,7 +21,7 @@ const Navbar = ({ type, title }: { type: string | undefined; title: string | und
   return (
     <AnimatePresence>
       <motion.nav
-        className="sticky top-0 left-0 right-0 flex justify-center bg-light-orange-50 z-50"
+        className="fixed top-0 left-0 right-0 flex justify-center bg-light-orange-50 z-50 border-b-3  border-black"
         initial={{
           y: -100,
         }}
@@ -30,7 +30,7 @@ const Navbar = ({ type, title }: { type: string | undefined; title: string | und
           transition: { type: "spring", stiffness: 200, damping: 15, delay: 0.25 },
         }}
       >
-        <div className="w-full relative text-left p-4 md:px-12  md:py-4 border-b-3 flex items-center justify-between border-black">
+        <div className="w-full  max-w-[1440px] relative text-left p-4 md:px-12  md:py-4 flex items-center justify-between">
           <div>
             <div className="text-2xl md:text-3xl font-bold leading-none">
               {type ?? "NOT FOUND"}

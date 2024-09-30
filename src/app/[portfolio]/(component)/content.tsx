@@ -10,7 +10,7 @@ const Content = ({
   contents: { image: StaticImageData; title: string; techs: string[]; description: string }[];
 }) => {
   return (
-    <section>
+    <section className="pt-20">
       {contents.map((content, index) => {
         return (
           <div key={content.title} className={cn(index !== 0 ? "mt-16" : "")}>

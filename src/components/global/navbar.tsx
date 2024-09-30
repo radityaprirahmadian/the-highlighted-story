@@ -102,14 +102,14 @@ const Navbar = () => {
   return (
     <AnimatePresence>
       <motion.nav
-        className="sticky top-0 left-0 right-0 flex justify-center bg-light-orange-50 z-50"
+        className="fixed top-0 left-0 right-0 flex justify-center bg-light-orange-50 border-b-3 border-black z-50"
         initial={{
           y: -100,
         }}
         animate={controls}
         variants={generateNavbarVariants().variants}
       >
-        <div className="w-full flex p-4 md:px-12 md:py-4 items-center justify-between border-b-3 border-black">
+        <div className="w-full  max-w-[1440px] flex p-4 md:px-12 md:py-4 items-center justify-between">
           <div>
             <div className="text-2xl md:text-3xl font-bold !leading-none">
               {lang.chapter.toUpperCase()} {activeSection.no}

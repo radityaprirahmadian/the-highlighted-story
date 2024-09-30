@@ -30,8 +30,6 @@ export default function RootLayout({
             ></Image> */}
 
             {children}
-
-            <div className="absolute w-full h-full bg-black z-0 left-2 top-2"></div>
           </div>
         </main>
       </body>
