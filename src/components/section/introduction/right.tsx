@@ -22,7 +22,7 @@ const Right = () => {
         <span className="py-1 px-2 bg-carribean-50 text-white text-xl md:text-2xl">Raditya Prirahmadian,</span>{" "}
         {lang.indefinite}
       </p>
-      <h1 className="text-3xl lg:text-5xl font-bold mt-1">FRONTEND WEB DEVELOPER</h1>
+      <h1 className="text-3xl lg:text-5xl font-bold mt-3">FRONTEND WEB DEVELOPER</h1>
       <p className="mt-12">{lang.story},</p>
       <div className="flex items-center flex-col md:flex-row gap-5 mt-2">
         <p>{lang.youCan}</p>

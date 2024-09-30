@@ -52,11 +52,11 @@ export const BentoGridItem = ({
         <motion.div
           className="absolute left-0 right-0 bottom-0 top-0 flex items-center justify-center"
           initial={{ background: "rgba(0,0,0,0)", opacity: 0 }}
-          whileHover={{ background: "rgba(0,0,0,0.3)", opacity: 1, transition: { ease: "circOut", duration: 0.2 } }}
+          whileHover={{ background: "rgba(0,0,0,0.2)", opacity: 1, transition: { ease: "circOut", duration: 0.2 } }}
         >
           <div className="relative cursor-pointer" onClick={() => router.push(`/projects?type=${slug}`)}>
             <motion.div
-              initial={{ x: -8, y: -8 }}
+              initial={{ x: -5, y: -5 }}
               whileHover={{ x: 0, y: 0, transition: { ease: "circInOut", duration: 0.2, delay: 0.01 } }}
               className="px-6 py-2 z-10 relative text-md border-black border-3 bg-pumpkin-100 text-black"
             >

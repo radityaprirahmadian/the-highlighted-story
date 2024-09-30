@@ -231,7 +231,7 @@ const Item = ({
               }}
             >
               <motion.div
-                initial={{ x: -8, y: -8 }}
+                initial={{ x: -5, y: -5 }}
                 whileHover={{ x: 0, y: 0, transition: { ease: "circInOut", duration: 0.2, delay: 0.01 } }}
                 className="py-2 px-8 border-3 relative z-10 text-md text-black border-black bg-pumpkin-100 cursor-pointer"
                 onClick={() => router.push(`/works?type=${slug}`)}
