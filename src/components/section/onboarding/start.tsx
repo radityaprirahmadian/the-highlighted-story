@@ -22,7 +22,7 @@ const StartButton = ({ onClick }: { onClick: () => void }) => {
         }}
       >
         <motion.div
-          initial={{ x: -7, y: -7 }}
+          initial={{ x: -5, y: -5 }}
           whileHover={{ x: 0, y: 0, transition: { ease: "circInOut", duration: 0.2, delay: 0.01 } }}
           className="py-2 px-12 border-3 relative z-10 text-black text-lg border-black bg-pumpkin-100 cursor-pointer"
         >
