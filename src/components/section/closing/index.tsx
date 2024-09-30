@@ -37,7 +37,7 @@ const Closing = ({ parentRef }: { parentRef: any }) => {
           <motion.div
             initial={{ x: -5, y: -5 }}
             whileHover={{ x: 0, y: 0, transition: { ease: "circInOut", duration: 0.2, delay: 0.01 } }}
-            className="border-3 relative z-10 text-lg lg:text-xl text-white border-black bg-pumpkin-100 cursor-pointer"
+            className="border-3 relative z-10 text-lg lg:text-xl text-black border-black bg-pumpkin-100 cursor-pointer"
           >
             <Link
               href="https://www.linkedin.com/in/radityaprirahmadian/"

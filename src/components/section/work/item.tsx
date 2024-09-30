@@ -90,7 +90,7 @@ const Item = ({
         initial={{ x: -8, y: -8 }}
         whileHover={{ x: 0, y: 0, transition: { ease: "circInOut", duration: 0.2, delay: 0.01 } }}
         className={cn(
-          `w-full h-full relative z-10 overflow-hidden border-black border-3 bg-light-orange-90 text-black lg:pt-10 flex flex-col lg:flex-row items-start gap-10`
+          `w-full h-full relative z-10 overflow-hidden border-black border-3 bg-light-orange-50 text-black lg:pt-10 flex flex-col lg:flex-row items-start gap-10`
         )}
       >
         <div
@@ -233,7 +233,7 @@ const Item = ({
               <motion.div
                 initial={{ x: -8, y: -8 }}
                 whileHover={{ x: 0, y: 0, transition: { ease: "circInOut", duration: 0.2, delay: 0.01 } }}
-                className="py-2 px-8 border-3 relative z-10 text-md text-white border-black bg-pumpkin-100 cursor-pointer"
+                className="py-2 px-8 border-3 relative z-10 text-md text-black border-black bg-pumpkin-100 cursor-pointer"
                 onClick={() => router.push(`/works?type=${slug}`)}
               >
                 {lang.detail}
@@ -243,7 +243,7 @@ const Item = ({
           </motion.div>
         ) : null}
       </motion.div>
-      <div className="absolute w-full h-full bg-earth-yellow-100 border-black border-3 z-0 left-0 top-0"></div>
+      <div className="absolute w-full h-full bg-light-orange-100 border-black border-3 z-0 left-0 top-0"></div>
     </motion.div>
   );
 };

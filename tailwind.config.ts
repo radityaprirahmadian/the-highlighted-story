@@ -11,7 +11,7 @@ const config: Config = {
     extend: {
       colors: {
         pumpkin: {
-          "100": "#F37022",
+          "100": "#FD9A02",
           "40": "#f47e38",
           "30": "#f58d4e",
           "20": "#f79b64",

@@ -58,7 +58,7 @@ export const BentoGridItem = ({
             <motion.div
               initial={{ x: -8, y: -8 }}
               whileHover={{ x: 0, y: 0, transition: { ease: "circInOut", duration: 0.2, delay: 0.01 } }}
-              className="px-6 py-2 z-10 relative text-md border-black border-3 bg-pumpkin-100 text-white"
+              className="px-6 py-2 z-10 relative text-md border-black border-3 bg-pumpkin-100 text-black"
             >
               {lang.detail}
             </motion.div>

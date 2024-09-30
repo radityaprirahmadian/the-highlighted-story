@@ -24,7 +24,7 @@ const StartButton = ({ onClick }: { onClick: () => void }) => {
         <motion.div
           initial={{ x: -7, y: -7 }}
           whileHover={{ x: 0, y: 0, transition: { ease: "circInOut", duration: 0.2, delay: 0.01 } }}
-          className="py-2 px-12 border-3 relative z-10 text-white text-lg border-black bg-pumpkin-100 cursor-pointer"
+          className="py-2 px-12 border-3 relative z-10 text-black text-lg border-black bg-pumpkin-100 cursor-pointer"
         >
           Chapter 1: {sectionSettings[1].title}
         </motion.div>
