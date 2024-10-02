@@ -7,8 +7,9 @@ import Image from "next/image";
 const courier = Courier_Prime({ subsets: ["latin"], weight: ["400", "700"], display: "swap" });
 
 export const metadata: Metadata = {
-  title: "the highlighted story | radityaprirahmadian",
-  description: "Once upon a time there was a story that began.....",
+  title: "The Highlighted Story | radityaprirahmadian",
+  description:
+    "Discover the story of Raditya Prirahmadian, a talented frontend developer crafting digital experiences with dedication and creativity. Explore the narrative behind each project, uniquely told from a third-person perspective.",
 };
 
 export default function RootLayout({
