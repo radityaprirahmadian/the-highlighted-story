@@ -10,7 +10,7 @@ const Introduction = () => {
   return (
     <AnimatePresence>
       <motion.div
-        className="max-w-[1440px] relative py-10 lg:py-24 xl:pb-96 w-full flex flex-col md:flex-row gap-10 xl:gap-0 items-center justify-center xl:justify-between bg-light-orange-50 relative"
+        className="max-w-[1440px] py-10 lg:py-32 2xl:py-56 w-full flex flex-col md:flex-row gap-10 xl:gap-0 items-center justify-center xl:justify-between bg-light-orange-50 relative"
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ type: "spring", stiffness: 200, damping: 15 }}
